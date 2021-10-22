@@ -29,6 +29,7 @@
           <TableColumn fx:id="tableColumnId" prefWidth="65.0" text="Id" />
           <TableColumn fx:id="tableColumnName" minWidth="0.0" prefWidth="307.0" text="Name" />
             <TableColumn fx:id="tableColumnEDIT" prefWidth="44.0" />
+            <TableColumn fx:id="tableColumnREMOVE" prefWidth="65.0" />
         </columns>
          <padding>
             <Insets left="40.0" right="40.0" />
