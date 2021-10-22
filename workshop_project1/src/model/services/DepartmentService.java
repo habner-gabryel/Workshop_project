@@ -15,4 +15,7 @@ public class DepartmentService {
 		
 		return list;		
 	} 
+	
+	public DepartmentService() {
+	}
 }
