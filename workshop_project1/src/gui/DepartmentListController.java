@@ -116,6 +116,7 @@ public class DepartmentListController implements Initializable, DataChangeListen
 			
 		}
 		catch (IOException e){
+			e.printStackTrace();
 			Alerts.showAlert("Deu ruim (IOException)", null, "Pois é Parceiro, " + e.getMessage(), AlertType.ERROR);
 		}
 	}
