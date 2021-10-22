@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="161.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="161.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DepartmentFormController">
    <children>
       <GridPane layoutX="25.0" prefHeight="106.0" prefWidth="720.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
         <columnConstraints>
@@ -27,17 +27,17 @@
          <children>
             <Label text="Id:" />
             <Label text="Name:" GridPane.rowIndex="1" />
-            <TextField editable="false" GridPane.columnIndex="1" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label textFill="#a40000" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <TextField fx:id="txtId" editable="false" GridPane.columnIndex="1" />
+            <TextField fx:id="txtName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="labelErrorName" textFill="#a40000" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <Button minHeight="30.0" minWidth="55.0" mnemonicParsing="false" style="-fx-background-color: #444dc9;" text="Save" textFill="WHITE" />
-                  <Button minHeight="30.0" minWidth="55.0" mnemonicParsing="false" style="-fx-background-color: gray;" text="Cancel" textFill="WHITE">
+                  <Button fx:id="btnSave" minHeight="30.0" minWidth="55.0" mnemonicParsing="false" onAction="#onBtnSaveAction" style="-fx-background-color: #444dc9;" text="Save" textFill="WHITE" />
+                  <Button fx:id="btnCancel" minHeight="30.0" minWidth="55.0" mnemonicParsing="false" onAction="#onBtnCancelAction" style="-fx-background-color: gray;" text="Cancel" textFill="WHITE">
                      <padding>
                         <Insets left="5.0" />
                      </padding>
